@@ -1,0 +1,325 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Update",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "download": "Download",
+    "upload": "Upload",
+    "share": "Share",
+    "copy": "Copy",
+    "paste": "Paste",
+    "cut": "Cut",
+    "undo": "Undo",
+    "redo": "Redo",
+    "refresh": "Refresh",
+    "settings": "Settings",
+    "help": "Help",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms of Service"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "profile": "Profile",
+    "settings": "Settings",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back!",
+      "subtitle": "Sign in to access your account",
+      "username": "Username or email",
+      "password": "Password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot your password?",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up here",
+      "loginButton": "Sign In",
+      "loggingIn": "Signing in...",
+      "socialLogin": "Or sign in with",
+      "google": "Google",
+      "github": "GitHub"
+    },
+    "register": {
+      "title": "Create New Account",
+      "subtitle": "Join us and organize your PDFs",
+      "username": "Username",
+      "email": "Email",
+      "fullName": "Full name (optional)",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "agreeTerms": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "registerButton": "Create Account",
+      "registering": "Creating account...",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in here",
+      "socialRegister": "Or register with"
+    },
+    "validation": {
+      "required": "This field is required",
+      "invalidEmail": "Invalid email",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "passwordsNotMatch": "Passwords do not match",
+      "usernameRequired": "Username is required",
+      "passwordRequired": "Password is required"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid credentials",
+      "userExists": "User already exists",
+      "networkError": "Network error",
+      "serverError": "Server error",
+      "unknownError": "Unknown error"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Organize your PDFs with ease",
+      "subtitle": "The modern platform to merge, organize and manage your PDF documents",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Powerful Features",
+      "subtitle": "Everything you need to work with PDFs",
+      "merge": {
+        "title": "Merge PDFs",
+        "description": "Combine multiple PDFs into a single document"
+      },
+      "organize": {
+        "title": "Organize",
+        "description": "Reorder pages with intuitive drag-and-drop"
+      },
+      "compress": {
+        "title": "Compress",
+        "description": "Reduce file size while maintaining quality"
+      },
+      "ocr": {
+        "title": "OCR",
+        "description": "Extract text from images and scanned documents"
+      },
+      "watermark": {
+        "title": "Watermark",
+        "description": "Add protection and identification to documents"
+      },
+      "secure": {
+        "title": "Secure",
+        "description": "Your documents are processed securely"
+      }
+    },
+    "stats": {
+      "users": "Active Users",
+      "documents": "Documents Processed",
+      "projects": "Projects Created",
+      "satisfaction": "Satisfaction"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Join thousands of users who already organize their PDFs with us",
+      "button": "Create Free Account"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to your dashboard",
+    "subtitle": "Here you can manage all your PDF projects",
+    "stats": {
+      "totalProjects": "Total Projects",
+      "completedProjects": "Completed Projects",
+      "totalFiles": "Total Files",
+      "storageUsed": "Storage Used"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "newProject": "New Project",
+      "uploadFiles": "Upload Files",
+      "mergeDocuments": "Merge Documents",
+      "viewProjects": "View Projects"
+    },
+    "recentProjects": {
+      "title": "Recent Projects",
+      "noProjects": "No projects found",
+      "createFirst": "Create your first project",
+      "viewAll": "View All"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Manage and organize your PDF projects",
+    "newProject": "New Project",
+    "searchPlaceholder": "Search projects...",
+    "filters": {
+      "all": "All",
+      "draft": "Draft",
+      "processing": "Processing",
+      "completed": "Completed",
+      "error": "Error"
+    },
+    "project": {
+      "files": "files",
+      "pages": "pages",
+      "createdAt": "Created at",
+      "updatedAt": "Updated at",
+      "view": "View",
+      "edit": "Edit",
+      "download": "Download",
+      "delete": "Delete",
+      "share": "Share"
+    },
+    "upload": {
+      "title": "Upload PDF Files",
+      "dragDrop": "Drag PDF files here or click to select",
+      "maxSize": "Max size: 50MB per file",
+      "supportedFormats": "Supported formats: PDF",
+      "uploading": "Uploading...",
+      "success": "Files uploaded successfully!",
+      "error": "Error uploading files"
+    },
+    "operations": {
+      "merge": "Merge",
+      "compress": "Compress",
+      "split": "Split",
+      "watermark": "Watermark",
+      "ocr": "Extract Text"
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "editProfile": "Edit Profile",
+    "cancelEdit": "Cancel",
+    "saveChanges": "Save Changes",
+    "saving": "Saving...",
+    "updateSuccess": "Profile updated successfully!",
+    "fields": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "bio": "Bio",
+      "bioPlaceholder": "Tell us a bit about yourself...",
+      "bioCounter": "characters"
+    },
+    "account": {
+      "title": "Account Information",
+      "memberSince": "Member since",
+      "accountType": "Account Type",
+      "administrator": "Administrator",
+      "standardUser": "Standard User",
+      "active": "Active",
+      "inactive": "Inactive"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "saveSettings": "Save Settings",
+    "saveSuccess": "Settings saved successfully!",
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Manage how you receive notifications",
+      "email": "Email Notifications",
+      "emailDesc": "Receive important updates via email",
+      "push": "Push Notifications",
+      "pushDesc": "Receive push notifications in browser",
+      "projectUpdates": "Project Updates",
+      "projectUpdatesDesc": "Notifications about your project progress"
+    },
+    "appearance": {
+      "title": "Appearance",
+      "subtitle": "Customize the application interface",
+      "theme": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "auto": "Auto",
+      "language": "Language",
+      "compactMode": "Compact Mode"
+    },
+    "performance": {
+      "title": "Performance",
+      "subtitle": "Optimize application performance",
+      "autoSave": "Auto Save",
+      "preloadImages": "Preload Images",
+      "compressionLevel": "Compression Level"
+    },
+    "privacy": {
+      "title": "Privacy & Security",
+      "subtitle": "Control your data and privacy",
+      "profileVisibility": "Profile Visibility",
+      "public": "Public",
+      "private": "Private",
+      "dataCollection": "Allow Data Collection for Improvements",
+      "analytics": "Analytics and Usage Metrics"
+    },
+    "dataManagement": {
+      "title": "Data Management",
+      "subtitle": "Export or clear your data",
+      "exportData": "Export My Data",
+      "clearCache": "Clear Local Cache"
+    },
+    "dangerZone": {
+      "title": "Danger Zone",
+      "subtitle": "Irreversible actions",
+      "deleteAccount": "Delete Account Permanently"
+    },
+    "dialogs": {
+      "deleteAccount": {
+        "title": "Delete Account",
+        "message": "Are you sure you want to permanently delete your account? This action cannot be undone and all your data will be lost.",
+        "deletePermanently": "Delete Permanently"
+      },
+      "exportData": {
+        "title": "Export Data",
+        "message": "Your data will be exported in JSON format including:",
+        "profileInfo": "• Profile information",
+        "appSettings": "• Application settings",
+        "projectHistory": "• Project history",
+        "export": "Export"
+      }
+    }
+  },
+  "errors": {
+    "title": "Oops! Something went wrong",
+    "subtitle": "We encountered an unexpected error. Our team has been notified.",
+    "details": "Error Details",
+    "tryAgain": "Try Again",
+    "goHome": "Go Home",
+    "reportError": "Report Error",
+    "tip": "Tip: Try refreshing the page or clearing your browser cache. If the problem persists, contact support.",
+    "userNotFound": "User not found. Please log in again."
+  },
+  "footer": {
+    "description": "The modern platform to organize and manipulate your PDF documents with ease and security.",
+    "quickLinks": "Quick Links",
+    "features": "Features",
+    "support": "Support",
+    "allRightsReserved": "All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by"
+  },
+  "languages": {
+    "pt-BR": "Português (Brasil)",
+    "en-US": "English (US)",
+    "es-ES": "Español",
+    "fr-FR": "Français"
+  }
+}

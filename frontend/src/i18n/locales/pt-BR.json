@@ -1,0 +1,325 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "create": "Criar",
+    "update": "Atualizar",
+    "confirm": "Confirmar",
+    "yes": "Sim",
+    "no": "Não",
+    "close": "Fechar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "download": "Baixar",
+    "upload": "Enviar",
+    "share": "Compartilhar",
+    "copy": "Copiar",
+    "paste": "Colar",
+    "cut": "Recortar",
+    "undo": "Desfazer",
+    "redo": "Refazer",
+    "refresh": "Atualizar",
+    "settings": "Configurações",
+    "help": "Ajuda",
+    "about": "Sobre",
+    "contact": "Contato",
+    "privacy": "Privacidade",
+    "terms": "Termos de Uso"
+  },
+  "navigation": {
+    "home": "Início",
+    "dashboard": "Dashboard",
+    "projects": "Projetos",
+    "profile": "Perfil",
+    "settings": "Configurações",
+    "login": "Entrar",
+    "register": "Registrar",
+    "logout": "Sair"
+  },
+  "auth": {
+    "login": {
+      "title": "Bem-vindo de volta!",
+      "subtitle": "Faça login para acessar sua conta",
+      "username": "Nome de usuário ou email",
+      "password": "Senha",
+      "rememberMe": "Lembrar de mim",
+      "forgotPassword": "Esqueceu sua senha?",
+      "noAccount": "Não tem uma conta?",
+      "signUp": "Registre-se aqui",
+      "loginButton": "Entrar",
+      "loggingIn": "Entrando...",
+      "socialLogin": "Ou entre com",
+      "google": "Google",
+      "github": "GitHub"
+    },
+    "register": {
+      "title": "Criar Nova Conta",
+      "subtitle": "Junte-se a nós e organize seus PDFs",
+      "username": "Nome de usuário",
+      "email": "Email",
+      "fullName": "Nome completo (opcional)",
+      "password": "Senha",
+      "confirmPassword": "Confirmar senha",
+      "agreeTerms": "Concordo com os",
+      "termsOfService": "Termos de Serviço",
+      "and": "e",
+      "privacyPolicy": "Política de Privacidade",
+      "registerButton": "Criar Conta",
+      "registering": "Criando conta...",
+      "hasAccount": "Já tem uma conta?",
+      "signIn": "Faça login aqui",
+      "socialRegister": "Ou registre-se com"
+    },
+    "validation": {
+      "required": "Este campo é obrigatório",
+      "invalidEmail": "Email inválido",
+      "passwordTooShort": "Senha deve ter pelo menos 6 caracteres",
+      "passwordsNotMatch": "Senhas não coincidem",
+      "usernameRequired": "Nome de usuário é obrigatório",
+      "passwordRequired": "Senha é obrigatória"
+    },
+    "errors": {
+      "invalidCredentials": "Credenciais inválidas",
+      "userExists": "Usuário já existe",
+      "networkError": "Erro de conexão",
+      "serverError": "Erro do servidor",
+      "unknownError": "Erro desconhecido"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Organize seus PDFs com facilidade",
+      "subtitle": "A plataforma moderna para mesclar, organizar e gerenciar seus documentos PDF",
+      "getStarted": "Começar Agora",
+      "learnMore": "Saiba Mais"
+    },
+    "features": {
+      "title": "Funcionalidades Poderosas",
+      "subtitle": "Tudo que você precisa para trabalhar com PDFs",
+      "merge": {
+        "title": "Mesclar PDFs",
+        "description": "Combine múltiplos PDFs em um único documento"
+      },
+      "organize": {
+        "title": "Organizar",
+        "description": "Reordene páginas com drag-and-drop intuitivo"
+      },
+      "compress": {
+        "title": "Comprimir",
+        "description": "Reduza o tamanho dos arquivos mantendo a qualidade"
+      },
+      "ocr": {
+        "title": "OCR",
+        "description": "Extraia texto de imagens e documentos escaneados"
+      },
+      "watermark": {
+        "title": "Marca d'água",
+        "description": "Adicione proteção e identificação aos documentos"
+      },
+      "secure": {
+        "title": "Seguro",
+        "description": "Seus documentos são processados com segurança"
+      }
+    },
+    "stats": {
+      "users": "Usuários Ativos",
+      "documents": "Documentos Processados",
+      "projects": "Projetos Criados",
+      "satisfaction": "Satisfação"
+    },
+    "cta": {
+      "title": "Pronto para começar?",
+      "subtitle": "Junte-se a milhares de usuários que já organizam seus PDFs conosco",
+      "button": "Criar Conta Gratuita"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Bem-vindo ao seu dashboard",
+    "subtitle": "Aqui você pode gerenciar todos os seus projetos PDF",
+    "stats": {
+      "totalProjects": "Total de Projetos",
+      "completedProjects": "Projetos Concluídos",
+      "totalFiles": "Total de Arquivos",
+      "storageUsed": "Armazenamento Usado"
+    },
+    "quickActions": {
+      "title": "Ações Rápidas",
+      "newProject": "Novo Projeto",
+      "uploadFiles": "Enviar Arquivos",
+      "mergeDocuments": "Mesclar Documentos",
+      "viewProjects": "Ver Projetos"
+    },
+    "recentProjects": {
+      "title": "Projetos Recentes",
+      "noProjects": "Nenhum projeto encontrado",
+      "createFirst": "Crie seu primeiro projeto",
+      "viewAll": "Ver Todos"
+    }
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "subtitle": "Gerencie e organize seus projetos PDF",
+    "newProject": "Novo Projeto",
+    "searchPlaceholder": "Pesquisar projetos...",
+    "filters": {
+      "all": "Todos",
+      "draft": "Rascunho",
+      "processing": "Processando",
+      "completed": "Concluído",
+      "error": "Erro"
+    },
+    "project": {
+      "files": "arquivos",
+      "pages": "páginas",
+      "createdAt": "Criado em",
+      "updatedAt": "Atualizado em",
+      "view": "Visualizar",
+      "edit": "Editar",
+      "download": "Baixar",
+      "delete": "Excluir",
+      "share": "Compartilhar"
+    },
+    "upload": {
+      "title": "Enviar Arquivos PDF",
+      "dragDrop": "Arraste arquivos PDF aqui ou clique para selecionar",
+      "maxSize": "Tamanho máximo: 50MB por arquivo",
+      "supportedFormats": "Formatos suportados: PDF",
+      "uploading": "Enviando...",
+      "success": "Arquivos enviados com sucesso!",
+      "error": "Erro ao enviar arquivos"
+    },
+    "operations": {
+      "merge": "Mesclar",
+      "compress": "Comprimir",
+      "split": "Dividir",
+      "watermark": "Marca d'água",
+      "ocr": "Extrair Texto"
+    }
+  },
+  "profile": {
+    "title": "Meu Perfil",
+    "editProfile": "Editar Perfil",
+    "cancelEdit": "Cancelar",
+    "saveChanges": "Salvar Alterações",
+    "saving": "Salvando...",
+    "updateSuccess": "Perfil atualizado com sucesso!",
+    "fields": {
+      "fullName": "Nome Completo",
+      "email": "Email",
+      "bio": "Bio",
+      "bioPlaceholder": "Conte um pouco sobre você...",
+      "bioCounter": "caracteres"
+    },
+    "account": {
+      "title": "Informações da Conta",
+      "memberSince": "Membro desde",
+      "accountType": "Tipo de Conta",
+      "administrator": "Administrador",
+      "standardUser": "Usuário Padrão",
+      "active": "Ativo",
+      "inactive": "Inativo"
+    }
+  },
+  "settings": {
+    "title": "Configurações",
+    "saveSettings": "Salvar Configurações",
+    "saveSuccess": "Configurações salvas com sucesso!",
+    "notifications": {
+      "title": "Notificações",
+      "subtitle": "Gerencie como você recebe notificações",
+      "email": "Notificações por Email",
+      "emailDesc": "Receba atualizações importantes por email",
+      "push": "Notificações Push",
+      "pushDesc": "Receba notificações push no navegador",
+      "projectUpdates": "Atualizações de Projetos",
+      "projectUpdatesDesc": "Notificações sobre progresso dos seus projetos"
+    },
+    "appearance": {
+      "title": "Aparência",
+      "subtitle": "Personalize a interface do aplicativo",
+      "theme": "Tema",
+      "light": "Claro",
+      "dark": "Escuro",
+      "auto": "Automático",
+      "language": "Idioma",
+      "compactMode": "Modo Compacto"
+    },
+    "performance": {
+      "title": "Performance",
+      "subtitle": "Otimize a performance do aplicativo",
+      "autoSave": "Salvamento Automático",
+      "preloadImages": "Pré-carregar Imagens",
+      "compressionLevel": "Nível de Compressão"
+    },
+    "privacy": {
+      "title": "Privacidade e Segurança",
+      "subtitle": "Controle seus dados e privacidade",
+      "profileVisibility": "Visibilidade do Perfil",
+      "public": "Público",
+      "private": "Privado",
+      "dataCollection": "Permitir Coleta de Dados para Melhorias",
+      "analytics": "Analytics e Métricas de Uso"
+    },
+    "dataManagement": {
+      "title": "Gerenciamento de Dados",
+      "subtitle": "Exporte ou limpe seus dados",
+      "exportData": "Exportar Meus Dados",
+      "clearCache": "Limpar Cache Local"
+    },
+    "dangerZone": {
+      "title": "Zona de Perigo",
+      "subtitle": "Ações irreversíveis",
+      "deleteAccount": "Excluir Conta Permanentemente"
+    },
+    "dialogs": {
+      "deleteAccount": {
+        "title": "Excluir Conta",
+        "message": "Tem certeza de que deseja excluir sua conta permanentemente? Esta ação não pode ser desfeita e todos os seus dados serão perdidos.",
+        "deletePermanently": "Excluir Permanentemente"
+      },
+      "exportData": {
+        "title": "Exportar Dados",
+        "message": "Seus dados serão exportados em formato JSON incluindo:",
+        "profileInfo": "• Informações do perfil",
+        "appSettings": "• Configurações do aplicativo",
+        "projectHistory": "• Histórico de projetos",
+        "export": "Exportar"
+      }
+    }
+  },
+  "errors": {
+    "title": "Oops! Algo deu errado",
+    "subtitle": "Encontramos um erro inesperado. Nossa equipe foi notificada.",
+    "details": "Detalhes do Erro",
+    "tryAgain": "Tentar Novamente",
+    "goHome": "Ir para Início",
+    "reportError": "Reportar Erro",
+    "tip": "Dica: Tente recarregar a página ou limpar o cache do navegador. Se o problema persistir, entre em contato com o suporte.",
+    "userNotFound": "Usuário não encontrado. Faça login novamente."
+  },
+  "footer": {
+    "description": "A plataforma moderna para organizar e manipular seus documentos PDF com facilidade e segurança.",
+    "quickLinks": "Links Rápidos",
+    "features": "Funcionalidades",
+    "support": "Suporte",
+    "allRightsReserved": "Todos os direitos reservados.",
+    "madeWith": "Feito com",
+    "by": "por"
+  },
+  "languages": {
+    "pt-BR": "Português (Brasil)",
+    "en-US": "English (US)",
+    "es-ES": "Español",
+    "fr-FR": "Français"
+  }
+}

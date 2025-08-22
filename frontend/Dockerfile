@@ -1,5 +1,5 @@
 # Multi-stage build for production
-FROM node:18-alpine as build
+FROM node:24-alpine as build
 
 # Set working directory
 WORKDIR /app
@@ -36,7 +36,7 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 CMD ["nginx", "-g", "daemon off;"]
 
 # Development stage
-FROM node:18-alpine as development
+FROM node:24-alpine as development
 
 WORKDIR /app
 

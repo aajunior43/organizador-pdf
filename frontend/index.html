@@ -4,10 +4,133 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>PDF Organizer - Plataforma Moderna para Manipulação de PDFs</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Meta tags for PWA -->
+    <meta name="description" content="Organize, mescle, comprima e manipule arquivos PDF com interface moderna e funcionalidades avançadas" />
+    <meta name="theme-color" content="#2196F3" />
+    <meta name="background-color" content="#667eea" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="PDF Organizer" />
+    <meta name="msapplication-TileColor" content="#2196F3" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2196F3" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pdf-organizer.com/" />
+    <meta property="og:title" content="PDF Organizer - Plataforma Moderna para Manipulação de PDFs" />
+    <meta property="og:description" content="Organize, mescle, comprima e manipule arquivos PDF com interface moderna e funcionalidades avançadas" />
+    <meta property="og:image" content="/icons/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pdf-organizer.com/" />
+    <meta property="twitter:title" content="PDF Organizer - Plataforma Moderna para Manipulação de PDFs" />
+    <meta property="twitter:description" content="Organize, mescle, comprima e manipule arquivos PDF com interface moderna e funcionalidades avançadas" />
+    <meta property="twitter:image" content="/icons/twitter-image.png" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="//api.pdf-organizer.com" />
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Loading fallback -->
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>📄 PDF Organizer</h1>
+        <p>JavaScript é necessário para executar esta aplicação.</p>
+        <p>Por favor, habilite JavaScript em seu navegador.</p>
+      </div>
+    </noscript>
+    
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+              
+              // Check for updates
+              registration.addEventListener('updatefound', () => {
+                const newWorker = registration.installing;
+                if (newWorker) {
+                  newWorker.addEventListener('statechange', () => {
+                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                      // New content available, show update notification
+                      if (confirm('Nova versão disponível! Deseja atualizar?')) {
+                        window.location.reload();
+                      }
+                    }
+                  });
+                }
+              });
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+      
+      // Install prompt
+      let deferredPrompt;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        
+        // Show install button or banner
+        const installBanner = document.createElement('div');
+        installBanner.innerHTML = `
+          <div style="position: fixed; bottom: 20px; right: 20px; background: #2196F3; color: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 9999; font-family: Arial, sans-serif;">
+            <div style="margin-bottom: 10px;">📱 Instalar PDF Organizer</div>
+            <button onclick="installApp()" style="background: white; color: #2196F3; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; margin-right: 8px;">Instalar</button>
+            <button onclick="dismissInstall()" style="background: transparent; color: white; border: 1px solid white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Agora não</button>
+          </div>
+        `;
+        installBanner.id = 'install-banner';
+        document.body.appendChild(installBanner);
+      });
+      
+      function installApp() {
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+              console.log('User accepted the install prompt');
+            }
+            deferredPrompt = null;
+            dismissInstall();
+          });
+        }
+      }
+      
+      function dismissInstall() {
+        const banner = document.getElementById('install-banner');
+        if (banner) {
+          banner.remove();
+        }
+      }
+      
+      // Handle app installed
+      window.addEventListener('appinstalled', (evt) => {
+        console.log('App was installed');
+        dismissInstall();
+      });
+    </script>
   </body>
 </html>

@@ -36,7 +36,7 @@ black==23.11.0
 flake8==6.1.0
 isort==5.12.0
 mypy==1.7.1
-pre-commit==3.6.0
+pre-commit==4.3.0
 
 # Monitoring and Performance
 psutil==5.9.6

@@ -32,7 +32,7 @@ factory-boy==3.3.0
 faker==33.1.0
 
 # Development Dependencies
-black==24.10.0
+black==25.9.0
 flake8==7.1.1
 isort==5.13.2
 mypy==1.13.0
